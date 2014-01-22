@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" type="text/css" href="/public/css/reset.css"/>
+    <style>
+        body{background-color: #333;position: relative;}
+        #holder {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 50px;
+            width:100%;
+            border:1px solid #ffffff;
+        }
+        #tip{position: absolute;z-index: 1000;width:300px;height: 200px;border: 1px solid #fff;border-radius: 10px;background-color: #2effff;opacity: 0.5;padding:10px;filter: alpha(opacity=50);}
+    </style>
+</head>
+<body>
+
+<div id="holder"></div>
+<script src="/public/js/raphael-min.js"></script>
+<script src="/public/js/jquery-1.8.0.min.js"></script>
+<script src="/public/js/tree.js"></script>
+<script src="/public/js/jquery.corner.js"></script>
+<script>
+    $(function($) {
+        var st=new SpaceTree();
+        st.init();
+    });
+</script>
+</body>
+</html>
